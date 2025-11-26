@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug parser",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/parser/parser",
+            "args": ["lexicon.txt"], // <-- your CLI argument here
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/parser",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb", // Use "lldb" for Mac, "gdb" for Linux
+            "preLaunchTask": "build"
+        }
+    ]
+}

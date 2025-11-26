@@ -1,0 +1,13 @@
+
+{
+    int a;
+    int b = 2;
+    if (a > b)
+        a++;
+    For (int i = 0; ; i++)
+
+        a--;
+        if (x < 100)
+            void a;
+    
+}
