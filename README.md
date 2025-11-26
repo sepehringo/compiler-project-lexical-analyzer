@@ -106,12 +106,6 @@ lexical_analyzer/
 ├── punctuation.c        # Handles punctuation recognition
 ├── string.c             # Handles string constant recognition
 └── makefile             # Build configuration
-
-parser/
-├── func.c               # Parser helper functions
-├── grammar.c            # Grammar rules implementation
-├── parser.c             # Main parser logic
-└── parser.h             # Parser header file
 ```
 
 ---
@@ -138,17 +132,6 @@ This will:
 - Generate `lexicons.txt` with all tokens
 - Generate `errors.txt` with any lexical errors (if found)
 
-### Build Parser
-```sh
-cd parser
-gcc -g parser.c grammar.c func.c -o parser
-```
-
-### Run Parser
-```sh
-./parser lexicons.txt
-```
-
 ---
 
 ## Debugging in VS Code
@@ -157,8 +140,7 @@ gcc -g parser.c grammar.c func.c -o parser
 The project includes [`.vscode/tasks.json`](.vscode/tasks.json) with build tasks configured.
 
 ### 2. **Set Up Debug Configuration**
-The project includes [`.vscode/launch.json`](.vscode/launch.json) with debug configurations:
-- **Debug parser:** Debugs the parser with `lexicon.txt` as input
+The project includes [`.vscode/launch.json`](.vscode/launch.json) with debug configuration for the lexical analyzer.
 
 ### 3. **Debug Steps**
 1. Place your input file in the appropriate folder
